@@ -52,7 +52,7 @@ void handle_password(GtkWidget *password_input, App *app)
         g_message("Using entered password to authenticate");
         const gchar *password_text =
             gtk_entry_get_text(GTK_ENTRY(password_input));
-        lightdm_greeter_respond(app->greeter, password_text, NULL);
+        lightdm_greeter_respond(app->greeter, password_text);
     } else {
         g_message("Password entered while already authenticated");
     }

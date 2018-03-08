@@ -12,7 +12,7 @@ AM_INIT_AUTOMAKE([subdir-objects])
 
 # Checks for libraries.
 PKG_CHECK_MODULES(GTK, gtk+-3.0 >= 3.14)
-PKG_CHECK_MODULES(LIGHTDM, liblightdm-gobject-1 >= 1.12)
+PKG_CHECK_MODULES(LIGHTDM, liblightdm-gobject-1 >= 1.10)
 
 # Checks for header files.
 AC_CHECK_HEADERS([stdlib.h])
